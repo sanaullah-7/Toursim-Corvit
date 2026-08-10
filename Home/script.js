@@ -1,6 +1,14 @@
-var menuBtn = document.getElementById('menuBtn');
-var nav = document.getElementById('nav');
+const menuBtn = document.getElementById('menuBtn');
+const nav = document.getElementById('nav');
 
-menuBtn.onclick = function () {
-  nav.classList.toggle('open');
-};
+if (menuBtn && nav) {
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+    });
+  });
+}

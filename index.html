@@ -13,17 +13,21 @@
   <header class="header">
     <div class="header-box">
       <div class="left">
-        <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <a href="#" class="logo">Voyage</a>
       </div>
 
       <nav class="nav" id="nav">
         <a href="#" class="active">Home</a>
-        <a href="#">About Us</a>
-        <a href="../Contact/Contact.html">Contact</a>
+        <a href="./About/index.html">About Us</a>
+        <a href="./Contact/Contact.html">Contact</a>
       </nav>
 
-      <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="search-icon" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </div>
   </header>
 
@@ -107,16 +111,14 @@
     </div>
   </section>
 
-  <footer>
-    <div class="wrap">
-      <a href="#" class="logo">Voyage</a>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">FAQ</a>
-      </div>
-      <p class="copy">&copy; 2024 Voyage Discovery. All rights reserved.</p>
-    </div>
+  <footer class="site-footer">
+    <p class="footer-logo">Voyage</p>
+    <nav class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </nav>
+    <p class="footer-copy">&copy; 2024 Voyage Discovery. All rights reserved.</p>
   </footer>
 
   <script src="./Home/script.js"></script>
