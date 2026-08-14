@@ -6,9 +6,118 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-    const total = "25";
-    console.log(parseInt(5) + total )
-  </script>
+
+  <header class="header">
+    <div class="header-box">
+      <div class="left">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" class="logo">Voyage</a>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#" class="active">Home</a>
+        <a href="./About/index.html">About Us</a>
+        <a href="./Contact/Contact.html">Contact</a>
+      </nav>
+
+      <button class="search-icon" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Discover The World's Hidden Masterpieces</h1>
+    <p class="hero-sub">Curated journeys for the modern explorer. Experience luxury, adventure, and unforgettable moments across the globe.</p>
+
+    <form class="search-box">
+        <div class="field">
+          <label>Where to?</label>
+          <div class="input-wrap">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Anywhere">
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="field">
+          <label>When?</label>
+          <div class="input-wrap">
+            <i class="fa-regular fa-calendar"></i>
+            <input type="text" placeholder="Select dates">
+          </div>
+        </div>
+        <button type="submit">Search <i class="fa-solid fa-arrow-right mob-arrow"></i></button>
+    </form>
+  </section>
+
+  <section class="featured">
+    <div class="wrap">
+      <div class="top-row">
+        <div>
+          <h2>Featured Destinations</h2>
+          <p class="small-text">Curated experiences for the discerning traveler</p>
+        </div>
+        <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="dest-grid">
+        <div class="dest-card big">
+          <img src="images/amalfi.png" alt="Amalfi Coast, Italy">
+        </div>
+
+        <div class="dest-right">
+          <div class="dest-card">
+            <img src="images/kyoto.png" alt="Kyoto, Japan">
+          </div>
+          <div class="dest-card namib">
+            <img src="images/namib.png" alt="Namib Desert">
+            <span class="price">$3,600</span>
+            <div class="dest-text">
+              <h3>Namib Desert</h3>
+              <p>Otherworldly dunes and starlit skies in Africa's oldest desert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="difference">
+    <div class="wrap">
+      <h2 class="center-title">The Voyage Difference</h2>
+
+      <div class="features">
+        <div class="feature">
+          <div class="icon blue"><i class="fa-solid fa-compass"></i></div>
+          <h3>Curated Itineraries</h3>
+          <p>Every journey is hand-crafted by our team of travel experts to match your unique preferences and passions.</p>
+        </div>
+        <div class="feature">
+          <div class="icon orange"><i class="fa-solid fa-star"></i></div>
+          <h3>Premium Stays</h3>
+          <p>Access exclusive accommodations and boutique hotels that offer unparalleled comfort and local authenticity.</p>
+        </div>
+        <div class="feature">
+          <div class="icon green"><i class="fa-solid fa-headset"></i></div>
+          <h3>24/7 Concierge</h3>
+          <p>Our dedicated support team is available around the clock to ensure your trip is seamless from start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Voyage</p>
+    <nav class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </nav>
+    <p class="footer-copy">&copy; 2024 Voyage Discovery. All rights reserved.</p>
+  </footer>
+
+  <script src="./Home/script.js"></script>
 </body>
 </html>
